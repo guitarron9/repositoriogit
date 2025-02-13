@@ -8,5 +8,6 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 - programa 3
 ## Actividad 2
 ## Actividad 3
-- programa 4
-- programa 5
+- programa 005-promodio-calificaciones
+- programa 006-operaciones-matematicas
+- programa 007-operaciones-trigonometricas
