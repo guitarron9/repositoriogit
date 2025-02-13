@@ -1,0 +1,20 @@
+# ejemplifica el uso de fucniones trigonometricas del modulo math
+
+import math as m
+import os;os.system('clear')
+
+print('calculo de las fucniones trigonometricas bsaicas')
+angulo = int( input('dame un angulo en radianes ?'))
+
+seno = m.sin(angulo)
+coseno = m.cos(angulo)
+tangente = m.tan(angulo)
+degrees = m.degrees(angulo)
+
+salida = (
+    'resumen de funciones \n'
+    f'el seno : {seno} \n'
+    f'el coseno : {coseno} \n'
+    f'el tangente : {tangente} \n'
+    f'el angulo : {angulo} en radianes, equivale a {degrees} grados\n'
+)
