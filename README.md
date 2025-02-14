@@ -11,3 +11,11 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 - programa 005-promodio-calificaciones
 - programa 006-operaciones-matematicas
 - programa 007-operaciones-trigonometricas
+- programa 008-dividir-en-cifras
+## Tarea 1
+- programa 009-hipotenusa-triangulo
+- programa 010-tercedr-angulo 
+- programa 011-convertir-temperatura
+- programa 012-volumen-cilindro
+- programa 013-calculo-tiempo
+- programa 014-numero-suerte

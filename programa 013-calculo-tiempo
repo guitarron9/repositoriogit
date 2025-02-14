@@ -1,0 +1,9 @@
+import os; os.system('clear')
+
+horas = int(input("Ingrese la cantidad de horas: "))
+dias = horas // 24
+minutos = horas * 60
+segundos = minutos * 60
+print("Equivalente en días:", dias)
+print("Equivalente en minutos:", minutos)
+print("Equivalente en segundos:", segundos)

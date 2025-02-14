@@ -1,0 +1,5 @@
+import os; os.system('clear')
+
+celcius = float(input("Ingrese la temperatura en grados Celsius: "))
+farenheit = (celcius * 9/5) + 32
+print("La temperatura en Fahrenheit es:", farenheit)

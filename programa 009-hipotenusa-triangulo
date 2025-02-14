@@ -1,0 +1,7 @@
+import os; os.system('clear')
+import math
+
+longlado1 = float(input("Ingrese la longitud del primer lado: "))
+longlado2 = float(input("Ingrese la longitud del segundo lado: "))
+hipotenusa = math.sqrt(longlado1 * longlado1 + longlado2 * longlado2)
+print("La hipotenusa del triángulo es:", hipotenusa)

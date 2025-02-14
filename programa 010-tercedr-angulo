@@ -1,0 +1,8 @@
+# fwefsw   
+
+import os; os.system('clear')
+
+angulo1 = float(input("Ingrese el primer ángulo: "))
+angulo2 = float(input("Ingrese el segundo ángulo: "))
+angulo3 = 180 - (angulo1 + angulo2)
+print("El tercedr ángulo es:", angulo3)

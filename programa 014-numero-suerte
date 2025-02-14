@@ -1,0 +1,10 @@
+import os; os.system('clear')
+
+año = int(input("Ingrese su año de nacimiento (4 dígitos): "))
+digito1 = año // 1000
+digito2 = (año // 100) % 10
+digito3 = (año // 10) % 10
+digito4 = año % 10
+suma_digitos = digito1 + digito2 + digito3 + digito4
+print("Dígitos individuales:", digito1, digito2, digito3, digito4)
+print("Suma de los dígitos:", suma_digitos)
