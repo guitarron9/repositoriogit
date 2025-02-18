@@ -19,3 +19,8 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 - programa 012-volumen-cilindro
 - programa 013-calculo-tiempo
 - programa 014-numero-suerte
+## Actividad 4
+- programa 015-verificar-numero
+- programa 016-verificar-suma
+- programa 017-convertir-temperaturas
+- programa 018-paga-trabajador-v2

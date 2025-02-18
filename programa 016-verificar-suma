@@ -1,0 +1,8 @@
+# Verificar suma
+a = int(input("Ingrese el primer número: "))
+b = int(input("Ingrese el segundo número: "))
+suma = int(input("Ingrese la suma esperada: "))
+if a + b == suma:
+    print("La suma es correcta")
+else:
+    print("La suma es incorrecta")

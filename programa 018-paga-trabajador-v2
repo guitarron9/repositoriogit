@@ -1,0 +1,9 @@
+nombre = input("Ingrese el nombre del trabajador: ")
+horas_trabajadas = float(input("Ingrese las horas trabajadas: "))
+pago_por_hora = float(input("Ingrese el pago por hora: "))
+if horas_trabajadas > 40:
+    horas_extra = horas_trabajadas - 40
+    paga_total = (40 * pago_por_hora) + (horas_extra * (pago_por_hora * 2))
+else:
+    paga_total = horas_trabajadas * pago_por_hora
+print(f"{nombre} recibirá un pago total de: ${paga_total:.2f}")
