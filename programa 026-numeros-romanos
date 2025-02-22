@@ -1,0 +1,7 @@
+# p26-numeros-romanos
+num = int(input("Ingrese un número entre 1 y 10: "))
+numeros_romanos = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+if 1 <= num <= 10:
+    print(numeros_romanos[num - 1])
+else:
+    print("Número inválido")

@@ -24,3 +24,15 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 - programa 016-verificar-suma
 - programa 017-convertir-temperaturas
 - programa 018-paga-trabajador-v2
+## Actividad 5
+- programa 019-verifica-suma
+- programa 020-ley-de-newton
+- programa 021-aceptar-estudiante
+- programa 022-tipo-angulo
+## Actividad 6
+- programa 023-numeros-consecutivos
+- programa 024-numero-mayor
+- programa 025-dia-semana
+- programa 026-numeros-romanos
+- programa 027-caluculos-notas
+- programa 028-aceptar-estudiante

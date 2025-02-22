@@ -1,0 +1,8 @@
+# p23-numeros-consecutivos
+num1 = int(input("Ingrese el primer número: "))
+num2 = int(input("Ingrese el segundo número: "))
+num3 = int(input("Ingrese el tercer número: "))
+if num2 == num1 + 1 and num3 == num2 + 1:
+    print("Los números son consecutivos.")
+else:
+    print("Error: los números no son consecutivos.")

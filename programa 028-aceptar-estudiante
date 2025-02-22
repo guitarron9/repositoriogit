@@ -1,0 +1,16 @@
+# p28-aceptar-estudiante-v2
+nombre = input("Ingrese el nombre del estudiante: ")
+sexo = input("Ingrese el sexo (H/M): ").upper()
+edad = int(input("Ingrese la edad: "))
+cal1 = float(input("Ingrese la primera calificación: "))
+cal2 = float(input("Ingrese la segunda calificación: "))
+cal3 = float(input("Ingrese la tercera calificación: "))
+promedio = (cal1 + cal2 + cal3) / 3
+if sexo == "M" and edad > 21 and 8 <= promedio <= 9.5:
+    print(f"{nombre}, has sido aceptada, tu edad de {edad} y tus calificaciones {cal1}, {cal2}, {cal3} lo permiten")
+elif sexo != "M":
+    print("Solo aceptamos mujeres")
+elif edad <= 21:
+    print("Eres mujer, pero no tienes la edad, solo mayores de 21 años")
+elif promedio < 8 or promedio > 9.5:
+    print("Eres mujer, tienes la edad, pero tu promedio no alcanza, solo promedios de 8 a 9.5")
