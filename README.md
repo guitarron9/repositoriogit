@@ -36,3 +36,9 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 - programa 026-numeros-romanos
 - programa 027-caluculos-notas
 - programa 028-aceptar-estudiante
+- programa 034-Tabla-de-conversión-de-pesos-a-dólares
+- programa 044–primer-examen-parcial
+- programa 035-Conjetura-de-Collatz
+- programa 036-Tabla de multiplicar
+- programa 037-Tablas-del-1-hasta-n
+- programa 038-Adivina-el-número

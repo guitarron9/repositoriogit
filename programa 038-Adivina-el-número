@@ -1,0 +1,31 @@
+import os
+os.system('clear')
+
+import random
+
+# Generar número aleatorio
+numero_secreto = random.randint(1, 100)
+intentos = 0
+adivinado = 0
+
+print("\n--- Adivina el número (entre 1 y 100) ---")
+
+# Proceso para adivinar
+while adivinado == 0:
+    intento = int(input("Introduce tu intento: "))
+    intentos += 1
+
+    # Pista para adivinar
+    adivinado = (intento == numero_secreto)
+    mayor = (intento > numero_secreto) * 1
+    menor = (intento < numero_secreto) * 1
+
+    print("El número es menor." * mayor + "El número es mayor." * menor)
+
+# Adivinó el número
+print(f"\n¡Correcto! Adivinaste el número en {intentos} intentos.")
+
+# Preguntar si desea repetir
+continuar = input("\n¿Repetir el proceso? (s/n): ")
+seguir = (continuar == "s") * 1
+print("\nProceso terminado" * (seguir == 0))

@@ -1,0 +1,20 @@
+import os
+os.system('clear')
+
+# Solicitar tabla y límite
+t = int(input("Introduce la tabla que deseas imprimir: "))
+n = int(input("Introduce hasta dónde imprimir la tabla: "))
+
+# Imprimir tabla
+print(f"\n--- Tabla del {t} ---")
+
+contador = 1
+while (contador <= n):
+    resultado = t * contador
+    print(t, "x", contador, "=", resultado)
+    contador += 1
+
+# Preguntar si desea repetir
+continuar = input("\n¿Repetir el proceso? (s/n): ")
+seguir = (continuar == "s") * 1
+print("\nProceso terminado" * (seguir == 0))

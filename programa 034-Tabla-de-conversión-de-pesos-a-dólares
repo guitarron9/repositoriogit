@@ -1,0 +1,27 @@
+import os
+
+os.system('clear')
+
+# Solicitar tipo de cambio
+tipo_cambio = float(input("Introduce el tipo de cambio del dólar: "))
+
+# Solicitar valores inicial y final
+valor_inicial = int(input("Introduce el valor inicial en pesos: "))
+valor_final = int(input("Introduce el valor final en pesos: "))
+
+# Imprimir tabla de conversión
+print("\n--- Tabla de Conversión ---")
+print("Pesos\tDólares")
+
+valor_actual = valor_inicial
+incremento = (valor_final > valor_inicial) * 1 + (valor_final < valor_inicial) * -1
+
+while (valor_actual <= valor_final) * (incremento == 1) or (valor_actual >= valor_final) * (incremento == -1):
+    dolares = valor_actual / tipo_cambio
+    print(valor_actual, "\t$", round(dolares, 2))
+    valor_actual += incremento
+
+# Preguntar si desea repetir
+continuar = input("\n¿Repetir el proceso? (s/n): ")
+seguir = (continuar == "s") * 1
+print("\nProceso terminado" * (seguir == 0))

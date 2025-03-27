@@ -1,0 +1,53 @@
+import os
+
+os.system('clear')
+# Precios por tipo de usuario
+alumno_precio = 100
+trabajador_precio = 200
+docente_precio = 500
+
+# Precios por tipo de paquete
+conferencias_precio = 600
+eventos_precio = 800
+kit_precio = 900
+
+# Solicitud de datos al usuario
+usuario_tipo = int(input("Tipo de usuario (1. Alumno, 2. Trabajador, 3. Docente): "))
+paquete_tipo = int(input("Tipo de paquete (1. Conferencias, 2. Eventos sociales, 3. Kit de acceso): "))
+cantidad = int(input("Cantidad de paquetes: "))
+
+# Cálculo del precio según tipo de usuario
+usuario_precio = (usuario_tipo == 1) * alumno_precio + (usuario_tipo == 2) * trabajador_precio + (usuario_tipo == 3) * docente_precio
+
+# Cálculo del precio según tipo de paquete
+paquete_precio = (paquete_tipo == 1) * conferencias_precio + (paquete_tipo == 2) * eventos_precio + (paquete_tipo == 3) * kit_precio
+
+# Cálculo del subtotal
+subtotal = (usuario_precio + paquete_precio) * cantidad
+
+# Cálculo de descuentos
+descuento_alumno = (usuario_tipo == 1) * (subtotal > 5000) * 0.20 * subtotal
+descuento_trabajador = (usuario_tipo == 2) * (subtotal > 5000) * 0.10 * subtotal
+descuento_docente = (usuario_tipo == 3) * (subtotal > 5000) * 0.05 * subtotal
+
+# Total con descuento aplicado
+descuento = descuento_alumno + descuento_trabajador + descuento_docente
+total = subtotal - descuento
+
+# Mostrar resumen de la venta
+print("\n--- Resumen de la venta ---")
+print("Subtotal: $", subtotal)
+print("Descuento: $", descuento)
+print("Total a pagar: $", total)
+
+# Registro de ventas del día
+total_ventas_dia = total
+
+# Procesamiento de más ventas
+continuar = input("\n¿Registrar otra venta? (s/n): ")
+seguir = (continuar == "s") * 1
+total_ventas_dia += (seguir) * total
+
+# Mostrar total del día si no continúa
+terminar = (continuar == "n") * 1
+print("\nTotal de ventas del día: $", total_ventas_dia * terminar + total * (1 - terminar))

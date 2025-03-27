@@ -1,0 +1,21 @@
+import os
+
+os.system('clear')
+# Solicitar número inicial
+numero = int(input("Introduce un número entero positivo: "))
+
+# Proceso de Collatz
+print("\n--- Conjetura de Collatz ---")
+print(numero)
+
+termina = (numero == 1)
+
+while termina == 0:
+    numero = (numero % 2 == 0) * (numero // 2) + (numero % 2 == 1) * (3 * numero + 1)
+    print(numero)
+    termina = (numero == 1)
+
+# Preguntar si desea repetir
+continuar = input("\n¿Repetir el proceso? (s/n): ")
+seguir = (continuar == "s") * 1
+print("\nProceso terminado" * (seguir == 0))

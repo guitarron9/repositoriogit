@@ -1,4 +1,7 @@
 # p28-aceptar-estudiante-v2
+import os;
+
+os.system('clear')
 nombre = input("Ingrese el nombre del estudiante: ")
 sexo = input("Ingrese el sexo (H/M): ").upper()
 edad = int(input("Ingrese la edad: "))

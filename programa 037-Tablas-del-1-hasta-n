@@ -1,0 +1,21 @@
+import os
+os.system('clear')
+
+# Solicitar límite de tablas
+n = int(input("Introduce el valor de n para imprimir tablas desde 1 hasta n: "))
+
+# Imprimir tablas del 1 al n
+tabla = 1
+while (tabla <= n):
+    print(f"\n--- Tabla del {tabla} ---")
+    contador = 1
+    while (contador <= n):
+        resultado = tabla * contador
+        print(tabla, "x", contador, "=", resultado)
+        contador += 1
+    tabla += 1
+
+# Preguntar si desea repetir
+continuar = input("\n¿Repetir el proceso? (s/n): ")
+seguir = (continuar == "s") * 1
+print("\nProceso terminado" * (seguir == 0))
