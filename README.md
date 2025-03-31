@@ -42,3 +42,9 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 - programa 036-Tabla de multiplicar
 - programa 037-Tablas-del-1-hasta-n
 - programa 038-Adivina-el-número
+- programa 039-impares-ascendente
+- programa 040-pares-descentente
+- programa 041-promedio-y-suma
+- programa 042-suma-hasta-200
+- programa 043-conversion-de-temperaturas
+- programa 044-numero-mayor

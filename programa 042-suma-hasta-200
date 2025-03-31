@@ -1,0 +1,25 @@
+import os
+os.system('clear')
+
+# Inicializar variables
+suma = 0
+contador = 0
+continuar = 1
+
+# Proceso para sumar hasta 200
+numero = int(input("Introduce un número: "))
+suma += numero
+contador += 1
+limite = (suma >= 200)
+
+numero = int(input("Introduce otro número: ")) * (limite == 0)
+suma += numero * (limite == 0)
+contador += (limite == 0)
+
+# Mostrar resultados
+print("\nSuma total:", suma)
+print("Números introducidos:", contador)
+
+# Preguntar si desea repetir
+continuar = (input("\n¿Repetir el proceso? (s/n): ") == "s") * 1
+print("\nProceso terminado" * (continuar == 0))
