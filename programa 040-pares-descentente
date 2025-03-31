@@ -1,0 +1,27 @@
+import os
+os.system('clear')
+
+# Solicitar valor de n
+n = int(input("Introduce el valor de n para imprimir pares desde 100: "))
+
+# Inicializar variables
+par = 100
+suma = 0
+continuar = 1
+
+# Proceso para imprimir pares y sumar
+print("\n--- Números Pares ---")
+print(par) * (par >= n)
+suma += (par >= n) * par
+par -= 2
+
+print(par) * (par >= n)
+suma += (par >= n) * par
+par -= 2
+
+# Mostrar suma
+print("\nSuma de pares:", suma)
+
+# Preguntar si desea repetir
+continuar = (input("\n¿Repetir el proceso? (s/n): ") == "s") * 1
+print("\nProceso terminado" * (continuar == 0))

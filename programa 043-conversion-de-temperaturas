@@ -1,0 +1,24 @@
+import os
+
+os.system('clear')
+
+# Solicitar temperaturas inicial y final
+temp_inicial = int(input("Introduce la temperatura inicial en °C: "))
+temp_final = int(input("Introduce la temperatura final en °C: "))
+
+# Inicializar variables
+temp_actual = temp_inicial
+incremento = (temp_final >= temp_inicial) * 1 + (temp_final < temp_inicial) * -1
+
+# Proceso para conversión de temperaturas
+print("\n--- Conversión a Fahrenheit ---")
+fahrenheit = (temp_actual * 9 / 5) + 32
+print(f"{temp_actual}°C = {fahrenheit}°F")
+
+temp_actual += incremento
+fahrenheit = (temp_actual * 9 / 5) + 32
+print(f"{temp_actual}°C = {fahrenheit}°F") * (temp_actual != temp_final)
+
+# Preguntar si desea repetir
+continuar = (input("\n¿Repetir el proceso? (s/n): ") == "s") * 1
+print("\nProceso terminado" * (continuar == 0))

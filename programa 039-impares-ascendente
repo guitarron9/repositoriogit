@@ -1,0 +1,27 @@
+import os
+os.system('clear')
+
+# Solicitar valor de n
+n = int(input("Introduce el valor de n para imprimir impares: "))
+
+# Inicializar variables
+impar = 1
+suma = 0
+continuar = 1
+
+# Proceso para imprimir impares y sumar
+print("\n--- Números Impares ---")
+print(impar) * (impar <= n)
+suma += (impar <= n) * impar
+impar += 2
+
+print(impar) * (impar <= n)
+suma += (impar <= n) * impar
+impar += 2
+
+# Mostrar suma
+print("\nSuma de impares:", suma)
+
+# Preguntar si desea repetir
+continuar = (input("\n¿Repetir el proceso? (s/n): ") == "s") * 1
+print("\nProceso terminado" * (continuar == 0))
