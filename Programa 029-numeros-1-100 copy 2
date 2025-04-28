@@ -1,0 +1,12 @@
+# p28-aceptar-estudiante-v2
+import os;
+
+os.system('clear')
+
+# Imprimir números de 1 hasta n con un paso de 2 en 2
+n = int(input("Ingresa el número hasta donde imprimir: "))
+paso = int(input("Ingresa el paso (2 o 3, por ejemplo): "))
+c = 1
+while c <= n:
+    print(c, end=" ")
+    c += paso  # Incrementamos por el paso dado
