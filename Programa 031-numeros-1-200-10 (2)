@@ -1,0 +1,10 @@
+# p28-aceptar-estudiante-v2
+import os;
+
+os.system('clear')
+
+# Ciclo nulo
+c = 100
+while c < 10:  # La condición es falsa desde el inicio
+    print(c)  # Esto nunca se ejecutará
+    c += 1  # Esto nunca sucederá

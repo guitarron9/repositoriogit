@@ -1,0 +1,18 @@
+import os
+
+os.system('clear')
+
+
+# Múltiplos de m entre 1 y n
+m = int(input("Múltiplos de m: "))
+n = int(input("Hasta n: "))
+suma = 0
+contador = 0
+
+for i in range(m, n + 1):
+    if i % m == 0:
+        print(i, end=" ")
+        suma += i
+        contador += 1
+
+print(f"\nLos múltiplos de {m} entre 1 y {n} fueron: {contador}, la suma de estos fue: {suma}")

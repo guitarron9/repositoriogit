@@ -1,0 +1,31 @@
+# p28-aceptar-estudiante-v2
+import os;
+
+os.system('clear')
+
+# Contar números introducidos por el usuario hasta que ingrese 999
+positivos = 0
+negativos = 0
+ceros = 0
+suma = 0
+contador = 0
+
+while True:
+    numero = int(input("Introduce un número (999 para terminar): "))
+    if numero == 999:
+        break  # Termina el ciclo cuando el usuario introduce 999
+    contador += 1
+    suma += numero
+    
+    if numero > 0:
+        positivos += 1
+    elif numero < 0:
+        negativos += 1
+    else:
+        ceros += 1
+
+print(f"Total de números introducidos: {contador}")
+print(f"Suma total: {suma}")
+print(f"Números positivos: {positivos}")
+print(f"Números negativos: {negativos}")
+print(f"Números ceros: {ceros}")

@@ -1,0 +1,16 @@
+# p28-aceptar-estudiante-v2
+import os;
+
+os.system('clear')
+
+# Sumar números hasta que la suma llegue a 100
+c = 0
+s = 0
+
+while c < 200:
+    c += 1
+    s += c
+    print(c, end=" ")
+    if s >= 100:  # Si la suma es mayor o igual a 100, salimos
+        print("\nAlcanzamos el límite de 100 con una suma de", s)
+        break

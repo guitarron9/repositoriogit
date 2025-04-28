@@ -36,6 +36,13 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 - programa 026-numeros-romanos
 - programa 027-caluculos-notas
 - programa 028-aceptar-estudiante
+## Actividad 7
+- Programa 029-numeros-1-100
+- Programa 030-numeros-100-1
+- Programa 031-numeros-1-200-10
+- Programa 032-numeros-suma-100
+- Programa 033-conteo-numeros
+## Actividad 8
 - programa 034-Tabla-de-conversión-de-pesos-a-dólares
 - programa 044–primer-examen-parcial
 - programa 035-Conjetura-de-Collatz
@@ -47,4 +54,21 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 - programa 041-promedio-y-suma
 - programa 042-suma-hasta-200
 - programa 043-conversion-de-temperaturas
+## Primer Examen Parcial
 - programa 044–primer-examen-parcial
+## Actividad 10
+- Programa 046-numeros-1-100
+- Programa 047-numeros-100-1
+- Programa 048-arriba-abajo
+- Programa 049-suma-pares-impares
+- Programa 050-suma-numeros
+- Programa 051-multiplos-suma
+- Programa 052-base-exponente
+## Actividad 11
+ 
+- Programa 053-factorial
+- Programa 054-tabla-multiplicar
+- Programa 055-tablas-multiplicar
+- Programa 056-piramide-caracter
+- Programa 057-factorial-numeros
+- Programa 058-combina-colores

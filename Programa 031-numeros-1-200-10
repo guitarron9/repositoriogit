@@ -1,0 +1,10 @@
+# p28-aceptar-estudiante-v2
+import os;
+
+os.system('clear')
+
+# Ciclo infinito
+c = 1
+while True:  # Esto nunca se detendrá sin una interrupción externa
+    print(c)  # Esto imprimirá 1 infinitamente
+    c = 1  # La variable no cambia, por lo que nunca termina el ciclo

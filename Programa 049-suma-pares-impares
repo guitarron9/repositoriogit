@@ -1,0 +1,26 @@
+import os
+
+os.system('clear')
+
+# Pares e impares de 1 a n y su suma
+while True:
+    n = int(input('Hasta donde deseas los números? '))
+    suma_pares = 0
+    suma_impares = 0
+
+    print("\nNúmeros pares:")
+    for i in range(2, n + 1, 2):
+        print(i, end=" ")
+        suma_pares += i
+    print(f'\nSuma de los números pares: {suma_pares}')
+
+    print("\nNúmeros impares:")
+    for i in range(1, n + 1, 2):
+        print(i, end=" ")
+        suma_impares += i
+    print(f'\nSuma de los números impares: {suma_impares}')
+
+    res = input('\n\nDeseas continuar (S/N) ? ').upper()
+    if res == 'N':
+        break
+    print('\nGracias por utilizar este programa')

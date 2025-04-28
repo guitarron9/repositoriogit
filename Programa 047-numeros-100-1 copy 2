@@ -1,0 +1,8 @@
+import os
+
+os.system('clear')
+
+# Imprimir números desde 100 hasta el número n ingresado por el usuario
+n = int(input("Ingresa un número hasta donde imprimir (menor o igual a 100): "))
+for x in range(100, n - 1, -1):
+    print(x, end=" ")

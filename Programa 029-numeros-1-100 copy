@@ -1,0 +1,11 @@
+# p28-aceptar-estudiante-v2
+import os;
+
+os.system('clear')
+
+# Imprimir números desde 1 hasta el número n ingresado por el usuario
+n = int(input("Ingresa un número hasta donde imprimir: "))
+c = 1
+while c <= n:
+    print(c, end=" ")
+    c += 1

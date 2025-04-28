@@ -1,0 +1,11 @@
+# p28-aceptar-estudiante-v2
+import os;
+
+os.system('clear')
+
+# Imprimir números de 100 a n con ciclo while
+n = int(input("Ingresa un número hasta donde imprimir (menor o igual a 100): "))
+c = 100
+while c >= n:
+    print(c, end=" ")
+    c -= 1

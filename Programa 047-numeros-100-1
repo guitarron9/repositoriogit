@@ -1,0 +1,9 @@
+import os
+
+os.system('clear')
+
+# Imprimir números de 1 hasta n con un paso de 2 en 2
+n = int(input("Ingresa el número hasta donde imprimir: "))
+paso = int(input("Ingresa el paso (2 o 3, por ejemplo): "))
+for x in range(1, n + 1, paso):
+    print(x, end=" ")

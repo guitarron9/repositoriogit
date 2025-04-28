@@ -1,0 +1,10 @@
+# p28-aceptar-estudiante-v2
+import os;
+
+os.system('clear')
+
+# Números de 100 a 1 con un ciclo while
+c = 100
+while c >= 1:
+    print(c, end=" ")
+    c -= 1  # Decrementamos 1 en cada iteración
