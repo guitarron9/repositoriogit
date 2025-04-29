@@ -1,0 +1,65 @@
+import os
+
+os.system('clear')
+
+# Crear dos listas: una de materias y otra de calificaciones
+materias = ["Matemáticas", "Física", "Química", "Historia", "Literatura"]
+calificaciones = [85, 90, 92, 88, 79]
+
+# Imprimir las listas
+print("Materias:", materias)
+print("Calificaciones:", calificaciones)
+
+# Juntar ambas listas en un diccionario y mostrarlo
+diccionario_calificaciones = {}
+i = 0
+while i < len(materias):  # Usamos un ciclo while para recorrer ambas listas
+    diccionario_calificaciones[materias[i]] = calificaciones[i]
+    i += 1
+
+print("\nDiccionario de calificaciones:")
+print(diccionario_calificaciones)
+
+# Agregar entradas al diccionario y mostrarlo
+diccionario_calificaciones["Biología"] = 91  # Añadir nueva materia y calificación
+print("\nDiccionario después de agregar Biología:")
+print(diccionario_calificaciones)
+
+# Eliminar entradas del diccionario y mostrarlo
+del diccionario_calificaciones["Historia"]  # Eliminar Historia
+print("\nDiccionario después de eliminar Historia:")
+print(diccionario_calificaciones)
+
+# Actualizar entradas del diccionario y mostrarlo
+diccionario_calificaciones["Matemáticas"] = 95  # Actualizar calificación de Matemáticas
+print("\nDiccionario después de actualizar Matemáticas:")
+print(diccionario_calificaciones)
+
+# Mostrar llaves del diccionario sin usar funciones
+print("\nLlaves del diccionario:")
+i = 0
+while i < len(diccionario_calificaciones):
+    print(list(diccionario_calificaciones.keys())[i])
+    i += 1
+
+# Mostrar valores del diccionario sin usar funciones
+print("\nValores del diccionario:")
+i = 0
+while i < len(diccionario_calificaciones):
+    print(list(diccionario_calificaciones.values())[i])
+    i += 1
+
+# Calcular el promedio de las calificaciones sin usar funciones
+suma = 0
+cantidad = 0
+for materia in diccionario_calificaciones:
+    suma += diccionario_calificaciones[materia]
+    cantidad += 1
+
+promedio = suma / cantidad
+print(f"\nEl promedio de las calificaciones es: {promedio:.2f}")
+
+# Borrar todas las entradas del diccionario
+diccionario_calificaciones.clear()
+print("\nDiccionario después de borrar todas las entradas:")
+print(diccionario_calificaciones)

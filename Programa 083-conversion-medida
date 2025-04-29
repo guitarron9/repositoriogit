@@ -1,0 +1,27 @@
+import os
+
+os.system('clear')
+
+# Solicitar al usuario que ingrese la cantidad y la unidad
+cantidad = float(input("Ingresa la cantidad a convertir: "))
+unidad = input("Ingresa la unidad de medida (km, m, cm, mm): ").lower()
+
+# Convertir a metros según la unidad ingresada
+if unidad == "km":
+    # Convertir kilómetros a metros
+    metros = cantidad * 1000
+elif unidad == "m":
+    # La cantidad ya está en metros
+    metros = cantidad
+elif unidad == "cm":
+    # Convertir centímetros a metros
+    metros = cantidad / 100
+elif unidad == "mm":
+    # Convertir milímetros a metros
+    metros = cantidad / 1000
+else:
+    print("Unidad no válida. Por favor ingresa una unidad válida (km, m, cm, mm).")
+    exit()
+
+# Imprimir el resultado de la conversión
+print(f"{cantidad} {unidad} es igual a {metros} metros.")

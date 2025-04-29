@@ -1,0 +1,33 @@
+import os
+
+os.system('clear')
+
+
+# Crear un diccionario con los datos de un estudiante
+estudiante = {
+    "nombre": "Juan Pérez",
+    "edad": 20,
+    "curso": "Ingeniería en Sistemas",
+    "promedio": 8.7
+}
+
+# Modificar el diccionario original e imprimirlo
+estudiante["edad"] = 21  # Se actualiza la edad
+estudiante["promedio"] = 9.2  # Se actualiza el promedio
+print("Diccionario modificado:")
+print(estudiante)
+
+# Imprimir las llaves del diccionario (sin usar .keys())
+print("\nLas llaves del diccionario son:")
+for llave in estudiante:
+    print(llave)
+
+# Imprimir los valores del diccionario (sin usar .values())
+print("\nLos valores del diccionario son:")
+for llave in estudiante:
+    print(estudiante[llave])
+
+# Imprimir las llaves y valores del diccionario al mismo tiempo (sin usar .items())
+print("\nLlaves y valores del diccionario:")
+for llave in estudiante:
+    print(llave, ":", estudiante[llave])

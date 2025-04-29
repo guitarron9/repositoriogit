@@ -65,10 +65,16 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 - Programa 051-multiplos-suma
 - Programa 052-base-exponente
 ## Actividad 11
- 
 - Programa 053-factorial
 - Programa 054-tabla-multiplicar
 - Programa 055-tablas-multiplicar
 - Programa 056-piramide-caracter
 - Programa 057-factorial-numeros
 - Programa 058-combina-colores
+
+## Actividad 14
+- Programa 080-estudiante
+- Programa 081-calificaciones
+- Programa 082-nombres y edades
+- Programa 083-conversion-medida
+- Programa 084-conversion-moneda

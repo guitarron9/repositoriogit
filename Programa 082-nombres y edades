@@ -1,0 +1,44 @@
+import os
+
+os.system('clear')
+
+# Crear un diccionario vacío para almacenar los datos
+diccionario = {}
+
+# Solicitar al usuario que ingrese nombres y edades
+while True:
+    nombre = input("Introduce el nombre (o 'fin' para terminar): ")
+    
+    if nombre.lower() == "fin":  # Si el usuario ingresa "fin", termina el ciclo
+        break
+    
+    edad = int(input(f"Introduce la edad de {nombre}: "))
+    
+    # Añadir el nombre y la edad al diccionario
+    diccionario[nombre] = edad
+
+# Mostrar el diccionario con nombres y edades
+print("\nDiccionario de nombres y edades:")
+print(diccionario)
+
+# Mostrar las llaves (nombres) y los valores (edades)
+print("\nNombres (llaves) del diccionario:")
+for nombre in diccionario:
+    print(nombre)
+
+print("\nEdades (valores) del diccionario:")
+for edad in diccionario.values():
+    print(edad)
+
+# Calcular la suma y el promedio de las edades
+suma_edades = 0
+cantidad = 0
+for edad in diccionario.values():
+    suma_edades += edad
+    cantidad += 1
+
+promedio_edades = suma_edades / cantidad if cantidad > 0 else 0  # Evitar división por 0
+
+# Mostrar la suma y el promedio de las edades
+print(f"\nSuma de las edades: {suma_edades}")
+print(f"Promedio de las edades: {promedio_edades:.2f}")
