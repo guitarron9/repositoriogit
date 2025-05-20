@@ -1,0 +1,29 @@
+import os
+
+os.system('clear')
+
+# p073 - Listas con aleatorios y operaciones
+import random
+
+# p075 - Multiplica dos listas
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+lista1 = []
+lista2 = []
+lista3 = []
+
+print("Introduce 5 números para la lista 1:")
+for i in range(5):
+    lista1.append(int(input(f"Lista1[{i}]: ")))
+
+print("Introduce 5 números para la lista 2:")
+for i in range(5):
+    lista2.append(int(input(f"Lista2[{i}]: ")))
+
+for i in range(5):
+    lista3.append(lista1[i] * lista2[i])
+
+print(f"\nLista 1: {lista1}")
+print(f"Lista 2: {lista2}")
+print(f"Multiplicación (Lista 3): {lista3}")

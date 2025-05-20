@@ -1,0 +1,17 @@
+import os
+
+os.system('clear')
+
+# p067 - Remover elementos de la lista
+
+
+nums = [1, 3, 5, 7, 9, 11, 99, 15, 88, 19, 100]
+print(f'Todos los números: {nums}\n')
+nums.remove(99)
+print(f'Remover el número 99: {nums}\n')
+num = nums.pop(8)
+print(f'Remover el índice 8: {nums} - elemento eliminado: {num}\n')
+num = nums.pop()
+print(f'Remover el último: {nums} - elemento eliminado: {num}\n')
+nums.clear()
+print(f'Remover todos los elementos: {nums}\n')

@@ -56,7 +56,7 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 - programa 043-conversion-de-temperaturas
 ## Primer Examen Parcial
 - programa 044–primer-examen-parcial
-## Actividad 10
+## Actividad 09
 - Programa 046-numeros-1-100
 - Programa 047-numeros-100-1
 - Programa 048-arriba-abajo
@@ -71,10 +71,35 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 - Programa 056-piramide-caracter
 - Programa 057-factorial-numeros
 - Programa 058-combina-colores
-
+## Tarea 4
+- Programa 059-numeros-10-en-10
+- Programa 060-suma-pares-2-n
+- Programa 061-secuencia-numeros-1
+- Programa 062-secuencia-numeros-2
+- Programa 063-secuencia-terminos-1
 ## Actividad 14
 - Programa 080-estudiante
 - Programa 081-calificaciones
 - Programa 082-nombres y edades
 - Programa 083-conversion-medida
 - Programa 084-conversion-moneda
+## Actividad 10
+ - Programa P064–acceder-lista
+ - Programa P065–cambiar-lista
+ - Programa P066–agregar-lista
+ - Programa P067–remover-lista
+ - Programa P068–iterar-lista
+## Actividad 11
+ - Programa P069–procesar-calificaciones
+ - Programa P070–sumar-listas
+ - Programa P071-dia-paga
+ - Programa P072-nombres-edades
+ - Programa P073-listas-aleatorios
+## Tarea 5
+ - Programa P074-procesar-notas 
+ - Programa P075-listas-multiplica 
+ - Programa P076-mes-día-nombre  
+ - Programa P077-listas-aleatorios-suma 
+ - Programa P078-ciudades 
+ - Programa P079 -Lista con los primeros n números impares
+

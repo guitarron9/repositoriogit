@@ -1,0 +1,41 @@
+import os
+
+os.system('clear')
+
+# p069 - Procesar calificaciones
+
+print('Procesar calificaciones\n')
+print("Introduce calificaciones entre 0 y 10 (99 para terminar):\n")
+nums = []
+n = 0
+suma = 0
+
+while n != 99:
+    n = float(input("Número > "))
+    if n == 99:
+        break
+    if 0 <= n <= 10:
+        nums.append(n)
+        suma += n
+    else:
+        print("x")
+
+if len(nums) > 0:
+    prom = suma / len(nums)
+    mp = []
+
+    for n in nums:
+        if n > prom:
+            mp.append(n)
+
+    print(f"\nCapturaste {len(nums)} números")
+    print(f"Las calificaciones son: {nums}")
+    print("\nEstadísticas >>")
+    print(f"Suma: {suma}")
+    print(f"Promedio: {prom}")
+    print(f"Mayores al promedio: {len(mp)} : {mp}")
+    print(f"Mayor: {max(nums)}")
+    print(f"Menor: {min(nums)}")
+else:
+    print("No se capturaron calificaciones válidas.")
+

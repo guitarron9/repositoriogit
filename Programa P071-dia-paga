@@ -1,0 +1,22 @@
+import os
+
+os.system('clear')
+
+# p071 - Día y paga
+
+
+print('Dado un día, imprimir la paga correspondiente\n')
+
+dias = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
+paga = [100, 200, 300, 400, 500, 600, 700]
+
+while True:
+    dia = input('Dame un día entre lunes y domingo: ').lower()
+    if dia in dias:
+        break
+    print('Día inválido. Intenta de nuevo.')
+
+pos = dias.index(dia)
+print(f'Elegiste el día: {dia}')
+print(f'Que corresponde a una paga de: {paga[pos]}')
+

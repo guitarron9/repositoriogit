@@ -1,0 +1,28 @@
+import os
+
+os.system('clear')
+
+# p070 - Sumar dos listas
+
+print('Sumar dos listas de n números\n')
+c = int(input('¿Cuántos elementos? '))
+
+lista1 = []
+print('\nLeyendo los elementos de la Lista 1:')
+for i in range(c):
+    n = int(input(f'Lista1[{i}]: '))
+    lista1.append(n)
+print(f'\nLista1: {lista1}')
+
+lista2 = []
+print('\nLeyendo los elementos de la Lista 2:')
+for i in range(c):
+    n = int(input(f'Lista2[{i}]: '))
+    lista2.append(n)
+print(f'\nLista2: {lista2}')
+
+lista3 = []
+for i in range(c):
+    lista3.append(lista1[i] + lista2[i])
+print(f'\nLista3 (suma): {lista3}')
+

@@ -1,0 +1,19 @@
+import os
+
+os.system('clear')
+
+# p63 - secuencia de términos armónicos (1/1! + 1/2! + ...)
+n = int(input("¿Cuántos términos para p63?: "))
+suma = 0
+factorial = 1
+for i in range(1, n+1):
+    factorial *= i  # Calcula i!
+    termino = 1 / factorial
+    suma += termino
+    if i == 1:
+        print("1", end=" + ")
+    elif i == n:
+        print(f"1/{i}!", end=" ")
+    else:
+        print(f"1/{i}!", end=" + ")
+print(", suma:", suma)

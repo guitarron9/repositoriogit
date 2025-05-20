@@ -1,0 +1,12 @@
+import os
+
+os.system('clear')
+
+# p60 - imprimir pares de 2 a n y su suma
+n = int(input("Dame número para p60: "))
+suma = 0
+for i in range(2, n+1, 2):
+    print(i, end=" ")
+    suma += i
+print(", La suma es =", suma)
+print("\n")

@@ -1,0 +1,28 @@
+import os
+
+os.system('clear')
+
+# p073 - Listas con aleatorios y operaciones
+import random
+
+# p077 - Suma de listas solo si ambos elementos son impares
+import os, random
+os.system('cls' if os.name == 'nt' else 'clear')
+
+l1 = []
+l2 = []
+l3 = []
+
+for i in range(10):
+    l1.append(random.randint(1, 100))
+    l2.append(random.randint(1, 100))
+
+for i in range(10):
+    if l1[i] % 2 != 0 and l2[i] % 2 != 0:
+        l3.append(l1[i] + l2[i])
+    else:
+        l3.append(0)
+
+print(f"Lista 1: {l1}")
+print(f"Lista 2: {l2}")
+print(f"Lista 3 (solo suma si ambos impares): {l3}")

@@ -1,0 +1,11 @@
+import os
+
+os.system('clear')
+
+# p61 - secuencia de renglones con mismo número repetido
+n = int(input("Dame número para p61: "))
+for i in range(1, n+1):
+    for j in range(i):
+        print(i, end=" ")
+    print()
+print("\n")

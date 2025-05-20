@@ -1,0 +1,13 @@
+import os
+
+os.system('clear')
+
+# p057 - Factorial de n números con for anidados
+print('Calcula el factorial de n números:\n')
+n = int(input('¿Cuántos números? '))
+for i in range(1, n + 1):
+    f = 1
+    print(f'{i}! = ', end='')
+    for j in range(1, i + 1):
+        f *= j
+    print(f)

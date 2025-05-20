@@ -1,0 +1,11 @@
+import os
+
+os.system('clear')
+
+# p62 - secuencia de renglones con número creciente
+n = int(input("Dame número para p62: "))
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(j, end=" ")
+    print()
+print("\n")

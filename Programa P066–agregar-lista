@@ -1,0 +1,17 @@
+import os
+
+os.system('clear')
+
+# p066 - Agregar elementos a la lista
+
+print('Agregar elementos a una lista existente\n')
+nums = [80.3, 12.5, 60.2, 30.4]
+print(f'Todos los números: {nums}\n')
+nums.append(90)
+nums.append(100)
+print(f'Agregar al final: {nums}\n')
+nums.insert(4, 80)
+print(f'Insertar en la posición 4: {nums}\n')
+otros = [110, 120, 130]
+nums.extend(otros)
+print(f'Extender con otra lista: {nums}\n')

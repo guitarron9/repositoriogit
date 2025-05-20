@@ -1,0 +1,14 @@
+import os
+
+os.system('clear')
+
+# p055 - Imprime tablas de multiplicar desde la 1 hasta la n
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+print('Imprime las tablas desde la tabla 1 hasta la tabla n')
+n = int(input('¿Hasta qué tabla quieres? '))
+m = int(input('¿Hasta dónde cada tabla? '))
+for i in range(1, n + 1):
+    for j in range(1, m + 1):
+        print(f'{i} x {j} = {i * j}')
+    print('\n')

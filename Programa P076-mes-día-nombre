@@ -1,0 +1,22 @@
+import os
+
+os.system('clear')
+
+# p073 - Listas con aleatorios y operaciones
+import random
+
+# p076 - Mostrar nombre del mes y número de días
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+         'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+dias = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+n = int(input("Número de mes (1-12): "))
+
+if 1 <= n <= 12:
+    print(f"Mes: {meses[n-1]}")
+    print(f"Días: {dias[n-1]}")
+else:
+    print("Mes inválido.")

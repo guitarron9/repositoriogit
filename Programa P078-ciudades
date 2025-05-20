@@ -1,0 +1,36 @@
+import os
+
+os.system('clear')
+
+# p073 - Listas con aleatorios y operaciones
+import random
+
+# p078 - Procesar lista de ciudades
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+ciudades = []
+consonantes = "bcdfghjklmnñpqrstvwxyz"
+
+print("Introduce nombres de ciudades ('$' para terminar):")
+while True:
+    nombre = input("Ciudad: ")
+    if nombre == "$":
+        break
+    ciudades.append(nombre)
+
+print(f"\nTotal de ciudades: {len(ciudades)}")
+print(f"Lista original: {ciudades}")
+
+ciudades.sort(reverse=True)
+print(f"Lista descendente: {ciudades}")
+
+conteo_consonantes = 0
+ciudades_consonantes = []
+
+for ciudad in ciudades:
+    if ciudad[0].lower() in consonantes:
+        conteo_consonantes += 1
+        ciudades_consonantes.append(ciudad)
+
+print(f"Ciudades que inician con consonante: {conteo_consonantes} → {ciudades_consonantes}")

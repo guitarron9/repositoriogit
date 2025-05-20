@@ -1,0 +1,14 @@
+import os
+
+os.system('clear')
+
+# p058 - Combinación de colores ingresados por el usuario
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+colores = input("Ingrese los colores disponibles (separados por comas): ").split(",")
+print("\nCombinaciones posibles:")
+for color1 in colores:
+    for color2 in colores:
+        if color1.strip() != color2.strip():
+            print(f"{color1.strip()} y {color2.strip()}")
+

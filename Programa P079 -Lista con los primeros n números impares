@@ -1,0 +1,41 @@
+import os
+
+os.system('clear')
+
+# p073 - Listas con aleatorios y operaciones
+import random
+
+# p079 - Lista con los primeros n números impares
+
+print("Generar una lista con los primeros n números impares\n")
+n = int(input("¿Cuántos impares deseas generar?: "))
+
+# Llenar la lista con impares
+impares = []
+for i in range(n):
+    impares.append(2 * i + 1)
+
+# Calcular suma y promedio
+suma = sum(impares)
+promedio = suma / len(impares)
+
+# Números divisibles entre 3 y su suma
+div3 = []
+for num in impares:
+    if num % 3 == 0:
+        div3.append(num)
+suma_div3 = sum(div3)
+
+# Imprimir resultados
+print(f"\nLista de impares: {impares}")
+print(f"Suma total: {suma}")
+print(f"Promedio: {promedio}")
+print(f"Números divisibles entre 3: {div3}")
+print(f"Suma de los divisibles entre 3: {suma_div3}")
+
+# Buscar un elemento
+buscar = int(input("\n¿Elemento a buscar en la lista?: "))
+if buscar in impares:
+    print(f"{buscar} está en la posición {impares.index(buscar)}")
+else:
+    print(f"{buscar} no está en la lista.")

@@ -1,0 +1,41 @@
+import os
+
+os.system('clear')
+
+# p073 - Listas con aleatorios y operaciones
+import random
+
+# p074 - Procesar notas
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+notas = []
+suma = 0
+print("Introduce notas entre 0 y 100 (0 para terminar):")
+
+while True:
+    nota = int(input("Nota: "))
+    if nota == 0:
+        break
+    if 0 < nota <= 100:
+        notas.append(nota)
+        suma += nota
+    else:
+        print("Nota inválida.")
+
+if len(notas) > 0:
+    promedio = suma / len(notas)
+    menores = []
+    for n in notas:
+        if n < promedio:
+            menores.append(n)
+
+    print(f"\nNotas capturadas: {notas}")
+    print(f"Total de notas: {len(notas)}")
+    print(f"Suma: {suma}")
+    print(f"Promedio: {promedio}")
+    print(f"Notas menores al promedio: {len(menores)} → {menores}")
+    print(f"Nota máxima: {max(notas)}")
+    print(f"Nota mínima: {min(notas)}")
+else:
+    print("No se ingresaron notas válidas.")
