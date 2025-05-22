@@ -1,0 +1,40 @@
+# p089 - Área de figuras con diccionario
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+# p094 - Diccionario de sueldos
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+nombres = ["Juan", "Pedro", "Manuel", "Elias", "Maria", "Felipe", "Julia", "Roberto"]
+sueldos = [4550.22, 8456.88, 1235.12, 9998.00, 12345.50, 29456.55, 12234.00, 2000.00]
+
+trabajadores = {}
+
+for i in range(len(nombres)):
+    trabajadores[nombres[i]] = sueldos[i]
+
+print("Diccionario de trabajadores:\n", trabajadores)
+
+print("\nUsando keys():")
+for k in trabajadores.keys():
+    print(k)
+
+print("\nUsando values():")
+for v in trabajadores.values():
+    print(v)
+
+print("\nUsando clave y valor por clave:")
+for k in trabajadores:
+    print(f"{k}: {trabajadores[k]}")
+
+print("\nUsando items():")
+for k, v in trabajadores.items():
+    print(f"{k} → {v}")
+
+suma = sum(trabajadores.values())
+promedio = suma / len(trabajadores)
+
+print(f"\nSuma total de sueldos: {suma:.2f}")
+print(f"Promedio de sueldos: {promedio:.2f}")
+

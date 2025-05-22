@@ -1,0 +1,29 @@
+
+# p086 - Lista de autos (diccionarios)
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+autos = [
+    {'marca': 'Ford', 'modelo': 'Mustang', 'año': 1964},
+    {'marca': 'VW', 'modelo': 'Jetta', 'año': 2015}
+]
+
+autos.append({'marca': 'Ford', 'modelo': 'Focus', 'año': 2000})
+
+print('\nTodos los autos:', autos, f"→ Total: {len(autos)}")
+
+print('\nDatos en forma de tabla:\n')
+for k in autos[0].keys():
+    print(f'{k}\t', end='')
+print()
+
+for auto in autos:
+    for v in auto.values():
+        print(f'{v}\t', end='')
+    print()
+
+print('\nDatos en forma de registro:\n')
+for auto in autos:
+    for k, v in auto.items():
+        print(f'{k:<12}: {v}')
+    print()

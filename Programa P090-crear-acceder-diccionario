@@ -1,0 +1,25 @@
+# p089 - Área de figuras con diccionario
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+# p090 - Crear y acceder a un diccionario de días
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+dias = {
+    1: "Lunes",
+    2: "Martes",
+    3: "Miércoles",
+    4: "Jueves",
+    5: "Viernes",
+    6: "Sábado",
+    7: "Domingo"
+}
+
+print("Diccionario completo:\n", dias)
+
+print("\nPrimer elemento (1):", dias[1])
+print("Último elemento (7):", dias[7])
+print("Quinto elemento (get):", dias.get(5))
+print("Séptimo elemento (get):", dias.get(7))
+print("\nDiccionario final:", dias)

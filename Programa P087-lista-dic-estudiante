@@ -1,0 +1,46 @@
+
+# p087 - Lista de estudiantes
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+grupo = [
+    {'nombre': 'Carlos', 'edad': 45, 'carrera': 'sistemas', 'promedio': 9},
+    {'nombre': 'Rocio', 'edad': 35, 'carrera': 'sistemas', 'promedio': 10}
+]
+
+while True:
+    print('\nDatos del estudiante (deja el nombre vacío para terminar):')
+    datos = {}
+    nombre = input('Nombre: ')
+    if nombre == '':
+        break
+    datos['nombre'] = nombre
+    datos['edad'] = int(input('Edad: '))
+    datos['carrera'] = input('Carrera: ')
+    datos['promedio'] = float(input('Promedio: '))
+    grupo.append(datos)
+
+print(f'\nGrupo completo: {grupo} → Total: {len(grupo)}\n')
+
+print('Datos en forma de tabla:\n')
+for k in grupo[0].keys():
+    print(f'{k}\t', end='')
+print()
+
+for alumno in grupo:
+    for v in alumno.values():
+        print(f'{v}\t', end='')
+    print()
+
+print('\nDatos en forma de registro:\n')
+suma = 0
+for est in grupo:
+    suma += est['promedio']
+    for k, v in est.items():
+        print(f'{k:<10}: {v}')
+    print()
+
+promedio = suma / len(grupo)
+print(f'\nSuma de promedios: {suma}')
+print(f'Promedio general: {promedio:.2f}')
+

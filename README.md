@@ -77,12 +77,6 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 - Programa 061-secuencia-numeros-1
 - Programa 062-secuencia-numeros-2
 - Programa 063-secuencia-terminos-1
-## Actividad 14
-- Programa 080-estudiante
-- Programa 081-calificaciones
-- Programa 082-nombres y edades
-- Programa 083-conversion-medida
-- Programa 084-conversion-moneda
 ## Actividad 10
  - Programa P064–acceder-lista
  - Programa P065–cambiar-lista
@@ -95,11 +89,29 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
  - Programa P071-dia-paga
  - Programa P072-nombres-edades
  - Programa P073-listas-aleatorios
-## Tarea 5
+ ## Tarea 5
  - Programa P074-procesar-notas 
  - Programa P075-listas-multiplica 
  - Programa P076-mes-día-nombre  
  - Programa P077-listas-aleatorios-suma 
  - Programa P078-ciudades 
  - Programa P079 -Lista con los primeros n números impares
-
+ ## Actividad 12
+- Programa 080-estudiante
+- Programa 081-calificaciones
+- Programa 082-nombres y edades
+- Programa 083-conversion-medida
+- Programa 084-conversion-moneda
+## Actividad 13
+ - Programa P085–procesar pizza
+ - Programa P086–lista-dic-auto
+ - Programa P087-lista-dic-estudiante
+ - Programa P088-cliente-productos
+ - Programa P089-area-figuras
+ ## Tarea 6
+- Programa P090-crear-acceder-diccionario 
+- Programa P091-modificar-diccionario 
+- Programa P092-agregar-diccionario 
+- Programa P093-eliminar-diccionario 
+- Programa P094-procesar-diccionario 
+- Programa P095-contar-caracteres 

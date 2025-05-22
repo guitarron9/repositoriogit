@@ -1,0 +1,36 @@
+# p089 - Área de figuras con diccionario
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+print('Cálculo de área de figuras\n')
+
+figuras = {
+    "cuadrado": lambda l: l * l,
+    "rectangulo": lambda b, h: b * h,
+    "triangulo": lambda b, h: (b * h) / 2,
+    "circulo": lambda r: 3.1416 * (r ** 2)
+}
+
+print("Opciones: cuadrado, rectangulo, triangulo, circulo")
+figura = input("¿Qué figura deseas calcular? ").lower()
+
+if figura == "cuadrado":
+    lado = float(input("Lado: "))
+    area = figuras[figura](lado)
+elif figura == "rectangulo":
+    base = float(input("Base: "))
+    altura = float(input("Altura: "))
+    area = figuras[figura](base, altura)
+elif figura == "triangulo":
+    base = float(input("Base: "))
+    altura = float(input("Altura: "))
+    area = figuras[figura](base, altura)
+elif figura == "circulo":
+    radio = float(input("Radio: "))
+    area = figuras[figura](radio)
+else:
+    print("Figura no válida")
+    area = None
+
+if area is not None:
+    print(f"\nÁrea del {figura}: {area:.2f}")

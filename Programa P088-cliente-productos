@@ -1,0 +1,37 @@
+# p088 - Calcular cantidad y subtotal por cliente
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+compras = []
+n = int(input("Número de compras: "))
+
+for i in range(1, n + 1):
+    print(f'\n------ Compra {i} ------')
+    compra = {
+        "cliente": input("Nombre del cliente: "),
+        "producto": input("Nombre del producto: "),
+        "cantidad": int(input("Cantidad: ")),
+        "precio": float(input("Precio unitario: "))
+    }
+    compras.append(compra)
+
+print('\nResumen de compras:\n', compras)
+
+# Procesar totales por cliente
+clientes = {}
+
+for compra in compras:
+    cliente = compra["cliente"]
+    if cliente not in clientes:
+        clientes[cliente] = {"cantidad": 0, "subtotal": 0}
+    clientes[cliente]["cantidad"] += compra["cantidad"]
+    clientes[cliente]["subtotal"] += compra["cantidad"] * compra["precio"]
+
+print('\nTotales por cliente:\n')
+for cliente, datos in clientes.items():
+    print(f"Cliente: {cliente}")
+    print(f"Cantidad total: {datos['cantidad']}")
+    print(f"Subtotal: ${datos['subtotal']:.2f}")
+    print()
+
+print('\nDiccionario final de clientes:\n', clientes)

@@ -1,0 +1,27 @@
+# p089 - Área de figuras con diccionario
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+# p093 - Eliminar elementos del diccionario de municipios
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+municipios = {
+    "Apozol": 1863, "Calera": 1868, "Fresnillo": 1554,
+    "Guadalupe": 1821, "Jalpa": 1824, "Jerez": 1824,
+    "Loreto": 1931, "Mazapil": 1824, "Momax": 1857
+}
+
+print("Original:\n", municipios)
+
+del municipios["Apozol"]
+print("\nDespués de eliminar 'Apozol':", municipios)
+
+municipios.pop("Fresnillo")
+print("\nDespués de eliminar 'Fresnillo' con pop():", municipios)
+
+municipios.popitem()
+print("\nDespués de eliminar el último con popitem():", municipios)
+
+municipios.clear()
+print("\nDespués de clear():", municipios)

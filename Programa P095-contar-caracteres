@@ -1,0 +1,19 @@
+# p089 - Área de figuras con diccionario
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+# p095 - Contar caracteres en una cadena
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+cadena = input("Escribe una frase: ")
+conteo = {}
+
+for c in cadena:
+    if c in conteo:
+        conteo[c] += 1
+    else:
+        conteo[c] = 1
+
+print("\nConteo de caracteres:")
+print(conteo)
