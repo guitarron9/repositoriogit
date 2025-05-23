@@ -118,6 +118,10 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
  ## Tarea 7
 - Programa P098–personas
 - Programa P099–numeros
+## Actividad 14
+- Programa P096–trabajando-conjuntos
+- Programa P097–operaciones-conjuntos
+
 ## Segundo Examen Parcial
 - Programa P100–segundo-examen-parcial
 

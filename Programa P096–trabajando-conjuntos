@@ -1,0 +1,43 @@
+# Operaciones sobre conjuntos
+import os
+os.system('cls' if os.name == 'nt' else 'clear')  # Usa 'cls' para Windows, 'clear' para Linux/Mac
+
+# Conjunto con elementos duplicados (Fresnillo se eliminará automáticamente)
+municipios = {'Zacatecas', 'Guadalupe', 'Jerez', 'Fresnillo', 'Fresnillo'}
+
+print('Conjuntos y operaciones sobre ellos:\n')
+
+# Tipo y longitud del conjunto
+print(f'La colección es del tipo: {type(municipios)}')
+print(f'Longitud del conjunto: {len(municipios)}')
+print(f'El conjunto original:\n{municipios}\n')
+
+# Iterar sobre los elementos
+print("Lista de municipios usando un ciclo:")
+for mun in municipios:
+    print(mun, end=' ')
+
+# Verificar si un elemento está en el conjunto
+print(f'\n\n¿Está Zacatecas en el conjunto? {"Zacatecas" in municipios}')
+
+# Agregar elementos
+print('\n\nAgregar elementos al conjunto:\n')
+municipios.add("Teul")
+print(f'Agregar con add("Teul"):\n{municipios}\n')
+
+otrosmunicipios = {"Luis Moya", "Ojocaliente", "Tepetongo"}
+municipios.update(otrosmunicipios)
+print(f'Agregar con update() (Luis Moya, Ojocaliente, Tepetongo):\n{municipios}\n')
+
+# Eliminar elementos
+print("Eliminar elementos del conjunto:\n")
+municipios.remove("Zacatecas")
+print(f'Remover con remove("Zacatecas"):\n{municipios}\n')
+
+mun = municipios.pop()  # Elimina un elemento aleatorio
+print(f'Eliminar con pop() (uno al azar): {mun}')
+print(f'Conjunto después del pop():\n{municipios}\n')
+
+municipios.clear()
+print(f'Eliminar todos los elementos con clear():\n{municipios}\n')
+
