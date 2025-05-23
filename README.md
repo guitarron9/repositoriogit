@@ -115,3 +115,10 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 - Programa P093-eliminar-diccionario 
 - Programa P094-procesar-diccionario 
 - Programa P095-contar-caracteres 
+ ## Tarea 7
+- Programa P098–personas
+- Programa P099–numeros
+## Segundo Examen Parcial
+- Programa P100–segundo-examen-parcial
+
+

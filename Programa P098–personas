@@ -1,0 +1,27 @@
+
+# p098 - Operaciones con conjuntos de nombres
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+# Crear conjuntos
+A = {"Juan", "Maria", "Pedro", "Jose", "Rocio"}
+B = {"Pedro", "Juan", "Pablo", "Mateo", "Esther"}
+
+print("Conjunto A:", A)
+print("Conjunto B:", B)
+
+# Operaciones entre conjuntos
+print("\nUnión (A | B):", A | B)
+print("Intersección (A & B):", A & B)
+print("Diferencia (A - B):", A - B)
+print("Diferencia simétrica (A ^ B):", A ^ B)
+
+# Otras verificaciones
+sub_conjunto1 = {"Pablo", "Mateo"}
+print("\n¿{'Pablo', 'Mateo'} es subconjunto de B?", sub_conjunto1.issubset(B))
+
+sub_conjunto2 = {"Reynaldo", "Angelica"}
+print("¿A es superconjunto de {'Reynaldo', 'Angelica'}?", A.issuperset(sub_conjunto2))
+
+print("¿Pedro está en A?", "Pedro" in A)
+print("¿Lilia no está en B?", "Lilia" not in B)

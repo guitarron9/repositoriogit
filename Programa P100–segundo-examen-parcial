@@ -1,0 +1,75 @@
+# Procesar empleados de una empresa de muebles
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+empleados = []
+
+print("Captura de empleados (deja el nombre vacío para terminar):\n")
+
+while True:
+    nombre = input("Nombre: ")
+    if nombre == "":
+        break
+    edad = int(input("Edad: "))
+    sexo = input("Sexo (h/m): ").lower()
+    pasatiempo = input("Pasatiempo: ").lower()
+    sueldo = float(input("Sueldo: "))
+
+    empleado = {
+        "nombre": nombre,
+        "edad": edad,
+        "sexo": sexo,
+        "pasatiempo": pasatiempo,
+        "sueldo": sueldo
+    }
+    empleados.append(empleado)
+
+# Mostrar cómo se guarda la lista
+print("\nLista de empleados (diccionarios):")
+for e in empleados:
+    print(e)
+
+# Mostrar en formato tabular
+print("\nDatos en formato tabular:")
+print("Nombre\tEdad\tSexo\tPasatiempo\tSueldo")
+for e in empleados:
+    print(f"{e['nombre']}\t{e['edad']}\t{e['sexo']}\t{e['pasatiempo']}\t\t{e['sueldo']}")
+
+# Calcular resumen
+total = len(empleados)
+hombres = sum(1 for e in empleados if e['sexo'] == 'h')
+mujeres = sum(1 for e in empleados if e['sexo'] == 'm')
+
+# Pasatiempos
+pasatiempos = {}
+for e in empleados:
+    p = e['pasatiempo']
+    if p in pasatiempos:
+        pasatiempos[p] += 1
+    else:
+        pasatiempos[p] = 1
+
+# Edad y sueldo
+suma_edades = sum(e['edad'] for e in empleados)
+prom_edad = suma_edades / total if total > 0 else 0
+suma_sueldo = sum(e['sueldo'] for e in empleados)
+prom_sueldo = suma_sueldo / total if total > 0 else 0
+
+mayor = max(empleados, key=lambda x: x['edad'])
+menor = min(empleados, key=lambda x: x['edad'])
+
+# Imprimir resumen
+print("\nResumen:")
+print(f"Total de empleados: {total}")
+print(f"Hombres: {hombres}")
+print(f"Mujeres: {mujeres}")
+print("Empleados por pasatiempo:")
+for p, c in pasatiempos.items():
+    print(f"  {p}: {c}")
+print(f"Suma de edades: {suma_edades}")
+print(f"Promedio de edad: {prom_edad:.2f}")
+print(f"Suma de sueldos: {suma_sueldo:.2f}")
+print(f"Promedio de sueldos: {prom_sueldo:.2f}")
+print(f"Empleado de mayor edad: {mayor['nombre']} ({mayor['edad']} años)")
+print(f"Empleado de menor edad: {menor['nombre']} ({menor['edad']} años)")
+
